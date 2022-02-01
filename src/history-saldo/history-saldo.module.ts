@@ -10,5 +10,6 @@ import { HistorySaldoController } from './history-saldo.controller';
   ],
   controllers: [HistorySaldoController],
   providers: [HistorySaldoService],
+  exports: [HistorySaldoService]
 })
 export class HistorySaldoModule {}

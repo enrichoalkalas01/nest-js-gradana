@@ -13,7 +13,14 @@ export class HistorySaldoService {
         return this.historySaldoModel.find().exec()
     }
 
-    // async create() {
-    //     return 'this is create'
-    // }
+    async create(params) {
+        const historyData = new HistorySaldo
+        
+        historyData.saldoId = params.token._id
+        historyData.saldo = params.saldo
+        historyData.tgl_topup = new Date()
+
+        const HistoryCreate = new this.historySaldoModel(historyData)
+        return HistoryCreate.save()
+    }
 }

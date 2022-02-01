@@ -1,1 +1,1 @@
-export const MONGO_CONNECTION = "mongodb+srv://tester:tester123@learnmongo0.sggui.mongodb.net/LearnMongo0"
+export const MONGO_CONNECTION = "mongodb+srv://tester:tester123@learnmongo0.sggui.mongodb.net/TesterDatabase"
